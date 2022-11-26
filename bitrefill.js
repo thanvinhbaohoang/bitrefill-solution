@@ -36,7 +36,7 @@ function filterBracket(input){
 }
 
 // 3. Recurring: look for key from bracketArray in string and replace it with getData(filterBracket(key)) 
-async function recurringFunction(bracketArray, inputString, callback){
+async function updateString(bracketArray, inputString, callback){
     console.log("Beep Boop...") // Loading Screen For UI/UX purpose
     let newString = inputString
 
@@ -49,8 +49,8 @@ async function recurringFunction(bracketArray, inputString, callback){
     return newString
 }
 
-// NOTE: Since I abstracted recurringFunction() into a seperate function instead of implementing it in mustachify(), 
-// there is no need need for callback() but I modified my original recurringFunction() so that it can take `callback` anyway :D
+// NOTE: Since I abstracted updateString() into a seperate function instead of implementing it in mustachify(), 
+// there is no need need for callback() but I modified my original updateString() so that it can take `callback` anyway :D
 async function mustachify(inputString, callback) {
 // TODO: FINISH THIS FUNCTION
     // 1. Create new bracketArray with items that are in bracket (use this regex: \{.*?\}} ) 
@@ -60,11 +60,11 @@ async function mustachify(inputString, callback) {
    // 3. Recurring: look for key from bracketArray in string and replace it with getData(filterBracket(key)) 
    let newString = inputString
    while (bracketArray != null) {
-    let testRecurringFunction = await recurringFunction(bracketArray, newString, callback)
+    let updatedString = await updateString(bracketArray, newString, callback)
 
     // Update newString and Reset bracketArray
-    newString = testRecurringFunction
-    bracketArray = testRecurringFunction.match(/\{.*?\}}/g) 
+    newString = updatedString
+    bracketArray = updatedString.match(/\{.*?\}}/g) 
     }
     // Return Final Output
     return newString
