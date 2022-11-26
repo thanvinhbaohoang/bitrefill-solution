@@ -1,5 +1,5 @@
 # bitrefill-solution
-!["Output picture of Bitrefill JS Challenge by Harold"](bitrefill-solution.png "Solution to Bitrefill JS Challenge")
+!["Output picture of Bitrefill JS Challenge by Harold"](https://github.com/thanvinhbaohoang/bitrefill-solution/blob/main/bitrefill-output.png "Solution to Bitrefill JS Challenge")
 
   ==========================================================================
   # Code Idea: First Thoughts
