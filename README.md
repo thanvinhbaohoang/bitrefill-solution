@@ -34,7 +34,7 @@
   4. Recurring: look for key from bracketArray and replace it with getData(bracketFilter(key)) 
         newString = "A:Alpha, Y:xY, B:xB1 and xB2, Z:xZ, C:xC1, xC2, {{F1}} and {{F2}} D:Delta" 
     Refresh bracketArray with Empty Array (take O(1) time instead of having to O(n) popping individual in for-loop)
-    Add new bracketed item from newString to bracketArray =[{{B1}}, {{B2}}, {{C1}}, {{C2}}, {{EE}}]
+    Add new bracketed item from newString to bracketArray =[{{F1}}, {{F2}}]
 
 
   5. Recurring: look for key from bracketArray and replace it with getData(key) also pop() the item from arr
