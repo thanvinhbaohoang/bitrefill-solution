@@ -1,7 +1,7 @@
 # bitrefill-solution
+!["Output picture of Bitrefill JS Challenge by Harold"](bitrefill-solution.png "Solution to Bitrefill JS Challenge")
 
-
-  =======================================================================================================================================================
+  ==========================================================================
   # Code Idea: First Thoughts
   ## Observation: 
   1. Keys with no switch case return itself 
@@ -14,7 +14,7 @@
      ==> Has to iterate over the String instead filter original string into array of seperate individual inputs
 
 
-===================================================================================================================================================
+=============================================================================
  ## ALGORITHM EXPLANATION:
   1. Create new bracketArray with items that are in bracket (use this regex: \{.*?\}} ) => bracketArray = [{{A}}, {{Y}}, {{BB}}, {{Z}}, {{C}}, {{DD}}]
         bracketArray = input.match(\[.*?\]])
