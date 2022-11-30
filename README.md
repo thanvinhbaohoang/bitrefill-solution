@@ -1,3 +1,22 @@
+
+
+# Better Bitrefill Solution
+!["Output picture of Better Bitrefill JS Challenge by Harold"](https://github.com/thanvinhbaohoang/bitrefill-solution/blob/main/better-bitrefill-output.png 
+"Better Solution to Bitrefill Challenge")
+
+## Algorithm Explanation
+ 1. Create new bracketArray with items that are in bracket (use this regex: \{.*?\}} ) => bracketArray = [{{A}}, {{Y}}, {{BB}}, {{Z}}, {{C}}, {{DD}}]
+        bracketArray = input.match(\[.*?\]])
+
+2. Create filterBracket(string) (This could be 1 line of code but make it a function to abstract for sake of explanation)
+  => This function remove bracket from string (Ex: filterBracket({{A}}) ==> return "A" )
+
+3. Recursion: (Instead of using While Loop in First Thought)
+Create Dictionary of key-value pair to store the current bracketItem's replacement
+Update String with all the keys in Dictionary
+
+
+
 # bitrefill-solution
 !["Output picture of Bitrefill JS Challenge by Harold"](https://github.com/thanvinhbaohoang/bitrefill-solution/blob/main/bitrefill-output.png "Solution to Bitrefill JS Challenge")
 
@@ -42,3 +61,4 @@
 
 RESULT: We get our result here as expected and the run time is roughly O(3n) or even O(n*logn) (Fact check me on this; I could be wrong ;]] )
 so it is still technically O(n) and I get a passing grade. YAY
+
