@@ -1,6 +1,6 @@
 
 
-# Better Bitrefill Solution
+# Bitrefill Solution
 !["Output picture of Better Bitrefill JS Challenge by Harold"](https://github.com/thanvinhbaohoang/bitrefill-solution/blob/main/bitrefill-output.png 
 "Better Solution to Bitrefill Challenge")
 
